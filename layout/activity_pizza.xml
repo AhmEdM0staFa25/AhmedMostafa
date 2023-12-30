@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.foodapp.PizzaActivity"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/back_btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/back_icon"
+        android:background="@color/background"></ImageView>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="233dp"
+        android:layout_height="162dp"
+        android:layout_marginStart="250dp"
+        android:src="@drawable/pizzas"></ImageView>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:text="Pizza"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/img"
+        android:textColor="@color/colorPrimary"
+        ></TextView>
+    <TextView
+    android:id="@+id/pop"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="30sp"
+    android:text="Popular"
+    android:textStyle="bold"
+    android:layout_marginStart="20dp"
+    android:layout_below="@+id/title"
+    ></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rec"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pop"></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

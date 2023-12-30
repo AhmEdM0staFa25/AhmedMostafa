@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.foodapp.ItemDetailsActivity"
+    android:background="@color/background">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/item_img"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/mc"
+        app:riv_corner_radius="50dp"></com.makeramen.roundedimageview.RoundedImageView>
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/back_icon"></ImageView>
+        <ImageView
+            android:id="@+id/like"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/wite_heart"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="220dp"
+            android:layout_toEndOf="@+id/back_btn"></ImageView>
+
+    <TextView
+        android:id="@+id/item_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_img"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="4.5  ⭐ (25)️"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_title"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="$9.50 ️"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+    <Button
+        android:id="@+id/add_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_title"
+        android:layout_marginStart="200dp"
+        android:layout_toEndOf="@+id/item_price"
+        android:background="@drawable/rec_btn"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="+"
+        android:textColor="@color/white"></Button>
+
+    <Button
+        android:id="@+id/sub_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_title"
+        android:layout_marginStart="73dp"
+
+        android:layout_toEndOf="@+id/item_price"
+        android:background="@drawable/rec_btn"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="-"
+        android:textColor="@color/white"></Button>
+
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_title"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@id/item_price"
+        android:text="1"
+        android:textSize="20sp"></TextView>
+        <TextView
+            android:id="@+id/item_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_price"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Brown the beef better. Lean ground beef – I like to use 85% lean angus. Garlic – use fresh  chopped. Spices – chili powder, cumin, onion powder."
+            android:textSize="20sp"
+            ></TextView>
+
+    <TextView
+        android:id="@+id/Adds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_des"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Choice of Add On"
+        android:textSize="20sp"
+        android:textStyle="bold"></TextView>
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_rate"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Ground Beef Tacos"
+        android:textColor="@color/balck"
+        android:textSize="30sp"
+        android:textStyle="bold"></TextView>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Adds"
+        android:layout_centerInParent="true">
+
+        <!--adding a radio button -->
+
+        <!--adding a radio button -->
+
+        <RadioButton
+            android:id="@+id/pepper_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:drawableRight="@drawable/pepper_add"
+            android:text="Pepper  julienned"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <RadioButton
+            android:id="@+id/baby_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:text="Baby spinach"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck"
+            android:drawableRight="@drawable/baby_add"/>
+
+        <!--adding a radio button -->
+        <RadioButton
+            android:id="@+id/masroom_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:checked="false"
+            android:text="Masroom"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck"
+            android:drawableRight="@drawable/masroom_add"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/add_to_cart_btn"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:layout_below="@+id/Adds"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rec_btn"
+        android:backgroundTint="@color/colorPrimary"
+        android:drawableLeft="@drawable/shop"
+        android:padding="25dp"
+        android:text="Add to cart"
+        android:textColor="@color/white"></Button>
+
+
+</RelativeLayout>
+

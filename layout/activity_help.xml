@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/topshape"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:src="@drawable/topshape"></ImageView>
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_icon"></ImageView>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/topshape"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+Strange OutOfMemory issue while loading an image to a Bitmap object
+4242
+How to close/hide the Android soft keyboard programmatically?
+572
+Android: combining text  image on a Button or ImageButton
+3108
+How to stop EditText from gaining focus when an activity starts in Android?
+6252
+What is the difference between px, dip, dp, and sp?
+1191
+How do I display an alert dialog on Android?
+920
+How to send an object from one Android Activity to another using Intents?
+876
+How to pass an object from one activity to another on Android
+3010
+Is there a unique Android device ID?
+3935
+Proper use cases for Android UserManager.isUserAGoat()?
+Strange OutOfMemory issue while loading an image to a Bitmap object
+4242
+How to close/hide the Android soft keyboard programmatically?
+572
+Android: combining text  image on a Button or ImageButton
+3108
+How to stop EditText from gaining focus when an activity starts in Android?
+6252
+What is the difference between px, dip, dp, and sp?
+1191
+How do I display an alert dialog on Android?
+920
+How to send an object from one Android Activity to another using Intents?
+876
+How to pass an object from one activity to another on Android
+3010
+Is there a unique Android device ID?
+3935
+Proper use cases for Android UserManager.isUserAGoat()?
+Strange OutOfMemory issue while loading an image to a Bitmap object
+4242
+How to close/hide the Android soft keyboard programmatically?
+572
+Android: combining text  image on a Button or ImageButton
+3108
+How to stop EditText from gaining focus when an activity starts in Android?
+6252
+What is the difference between px, dip, dp, and sp?
+1191
+How do I display an alert dialog on Android?
+920
+How to send an object from one Android Activity to another using Intents?
+876
+How to pass an object from one activity to another on Android
+3010
+Is there a unique Android device ID?
+3935
+Proper use cases for Android UserManager.isUserAGoat()?
+Strange OutOfMemory issue while loading an image to a Bitmap object
+4242
+How to close/hide the Android soft keyboard programmatically?
+572
+Android: combining text  image on a Button or ImageButton
+3108
+How to stop EditText from gaining focus when an activity starts in Android?
+6252
+What is the difference between px, dip, dp, and sp?
+1191
+How do I display an alert dialog on Android?
+920
+How to send an object from one Android Activity to another using Intents?
+876
+How to pass an object from one activity to another on Android
+3010
+Is there a unique Android device ID?
+3935
+Proper use cases for Android UserManager.isUserAGoat()?
+Strange OutOfMemory issue while loading an image to a Bitmap object
+4242
+How to close/hide the Android soft keyboard programmatically?
+572
+Android: combining text  image on a Button or ImageButton
+3108
+How to stop EditText from gaining focus when an activity starts in Android?
+6252
+What is the difference between px, dip, dp, and sp?
+1191
+How do I display an alert dialog on Android?
+920
+How to send an object from one Android Activity to another using Intents?
+876
+How to pass an object from one activity to another on Android
+3010
+Is there a unique Android device ID?
+3935
+Proper use cases for Android UserManager.isUserAGoat()?
+Strange OutOfMemory issue while loading an image to a Bitmap object
+4242
+How to close/hide the Android soft keyboard programmatically?
+572
+Android: combining text  image on a Button or ImageButton
+3108
+How to stop EditText from gaining focus when an activity starts in Android?
+6252
+What is the difference between px, dip, dp, and sp?
+1191
+How do I display an alert dialog on Android?
+920
+How to send an object from one Android Activity to another using Intents?
+876
+How to pass an object from one activity to another on Android
+3010
+Is there a unique Android device ID?
+3935
+Proper use cases for Android UserManager.isUserAGoat()?"
+        android:textColor="@color/balck"></TextView>
+
+</ScrollView>
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.foodapp.MyOrdersActivity"
+    android:background="@color/background">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/topshape"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:src="@drawable/topshape"></ImageView>
+
+    <ImageView
+        android:id="@+id/back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_icon"></ImageView>
+
+
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/topshape"
+        android:layout_marginStart="57dp"
+        android:layout_marginBottom="37dp"
+        android:layout_toEndOf="@+id/back_btn"
+        android:text=" My Orders"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/book"/>
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/topshape"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="25dp"
+        android:layout_toEndOf="@+id/textView3"
+        app:srcCompat="@drawable/account_pic" />
+
+<ImageView
+    android:id="@+id/myord"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/myord"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"></ImageView>
+    <TextView
+        android:id="@+id/no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/balck"
+        android:text="No uocoming orders "
+        android:layout_below="@+id/myord"
+        android:layout_centerHorizontal="true"></TextView>
+    <TextView
+        android:id="@+id/no1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="No uocoming orders have been placed yer. Disocover and order now "
+        android:layout_below="@+id/no"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"></TextView>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/no1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rec_btn"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Discover"
+        android:textColor="@color/white"></Button>
+
+
+
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
